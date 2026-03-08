@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:controller="com.sau.travelpro1.controller.mainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" >
+    <tabs>
+        <Tab text="Travel">
+            <content>
+                <fx:include source="travel.fxml" />
+            </content>
+        </Tab>
+        <Tab text="Passenger">
+            <content>
+                <fx:include source="passenger.fxml" />
+            </content>
+        </Tab>
+        <Tab text="Bus">
+            <content>
+                <fx:include source="bus.fxml" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

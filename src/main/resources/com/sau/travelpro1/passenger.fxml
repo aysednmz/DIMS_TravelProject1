@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:controller="com.sau.travelpro1.controller.passengerController"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="300.0" prefWidth="500.0">
+
+    <children>
+        <Label layoutX="40.0" layoutY="45.0" text="ID:" />
+        <Label layoutX="40.0" layoutY="85.0" text="NAME:" />
+        <Label layoutX="40.0" layoutY="125.0" text="ADDRESS:" />
+        <Label layoutX="40.0" layoutY="165.0" text="TELEPHONE:" />
+
+        <TextField fx:id="passengerId" layoutX="140.0" layoutY="41.0" prefWidth="160.0" />
+        <TextField fx:id="passengerName" layoutX="140.0" layoutY="81.0" prefWidth="160.0" />
+        <TextField fx:id="passengerAddress" layoutX="140.0" layoutY="121.0" prefWidth="160.0" />
+        <TextField fx:id="telephone" layoutX="140.0" layoutY="161.0" prefWidth="160.0" />
+
+        <Button fx:id="getPassenger" layoutX="320.0" layoutY="41.0" mnemonicParsing="false" onAction="#passengerIdGet" prefWidth="70.0" text="GET" />
+        <Button fx:id="clearPassenger" layoutX="320.0" layoutY="81.0" mnemonicParsing="false" onAction="#passengerClear" prefWidth="70.0" text="CLEAR" />
+
+        <Button fx:id="savePassenger" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#passengerSave" prefWidth="80.0" text="SAVE" />
+        <Button fx:id="updatePassenger" layoutX="135.0" layoutY="220.0" mnemonicParsing="false" onAction="#passengerUpdate" prefWidth="80.0" text="UPDATE" />
+        <Button fx:id="deletePassenger" layoutX="230.0" layoutY="220.0" mnemonicParsing="false" onAction="#passengerDelete" prefWidth="80.0" text="DELETE" />
+        <Button fx:id="closePassenger" layoutX="325.0" layoutY="220.0" mnemonicParsing="false" onAction="#passengerClose" prefWidth="80.0" text="CLOSE" />
+    </children>
+
+</AnchorPane>

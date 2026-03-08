@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.sau.travelpro1.controller.busController"
+            prefHeight="300.0" prefWidth="500.0">
+    <children>
+        <Label layoutX="40.0" layoutY="45.0" text="ID:" />
+        <Label layoutX="40.0" layoutY="85.0" text="AGENCY:" />
+        <Label layoutX="40.0" layoutY="125.0" text="ORIGIN:" />
+        <Label layoutX="40.0" layoutY="165.0" text="DESTINATION:" />
+
+        <TextField fx:id="busId" layoutX="140.0" layoutY="41.0" prefWidth="160.0" />
+        <TextField fx:id="busAgency" layoutX="140.0" layoutY="81.0" prefWidth="160.0" />
+        <TextField fx:id="busOrigin" layoutX="140.0" layoutY="121.0" prefWidth="160.0" />
+        <TextField fx:id="busDestination" layoutX="140.0" layoutY="161.0" prefWidth="160.0" />
+
+        <Button fx:id="getBus" layoutX="320.0" layoutY="41.0" mnemonicParsing="false" onAction="#BusIdGet" prefWidth="70.0" text="GET" />
+        <Button fx:id="clearBus" layoutX="320.0" layoutY="81.0" mnemonicParsing="false" onAction="#BusClear" prefWidth="70.0" text="CLEAR" />
+
+        <Button fx:id="saveBus" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#BusSave" prefWidth="80.0" text="SAVE" />
+        <Button fx:id="updateBus" layoutX="135.0" layoutY="220.0" mnemonicParsing="false" onAction="#BusUpdate" prefWidth="80.0" text="UPDATE" />
+        <Button fx:id="deleteBus" layoutX="230.0" layoutY="220.0" mnemonicParsing="false" onAction="#busDelete" prefWidth="80.0" text="DELETE" />
+        <Button fx:id="closeBus" layoutX="325.0" layoutY="220.0" mnemonicParsing="false" onAction="#busClose" prefWidth="80.0" text="CLOSE" />
+    </children>
+</AnchorPane>
