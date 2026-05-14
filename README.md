@@ -4,7 +4,7 @@ This project was developed for SWE212 Distributed Information Management System'
 * Ayşe Dönmez
 * Nurgül Dinçer
 * Elif Yırtıcı
-* İlker Kaya 
+* İlker Kaya
 
 This is a JavaFX application. The application provides a graphical user interface (GUI) to manage data using CRUD operations, supported by a PostgreSQL database via JDBC connectivity
 
